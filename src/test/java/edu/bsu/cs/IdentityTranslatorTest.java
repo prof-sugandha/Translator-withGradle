@@ -10,4 +10,9 @@ public class IdentityTranslatorTest {
         IdentityTranslator translator = new IdentityTranslator();
         assertEquals("Foo", translator.translate("Foo"));
     }
+    @Test
+    void translate_emptyString() {
+        IdentityTranslator translator = new IdentityTranslator();
+        assertEquals("", translator.translate(""));
+    }
 }
